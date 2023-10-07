@@ -1,0 +1,136 @@
+.comp-main-cont {
+  width: 100%;
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: row;
+  padding: 0px 0px 0px 3rem;
+  min-height: 572px;
+}
+
+.comp-left-cont {
+  width: 32%;
+  position: fixed;
+}
+
+.comp-right-cont {
+  width: 65%;
+  position: relative;
+  left: 30rem;
+}
+
+.list-container {
+  padding-left: 5rem;
+  padding-top: 2rem;
+}
+
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 75%;
+  background: #ffffff;
+  border-radius: 23px;
+  margin-right: 5px;
+}
+
+form.example button {
+  float: left;
+  width: 23%;
+  padding: 10px;
+  background: #0bb980;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+form.example button:hover {
+  background: #0bb980;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.comp-text-cont1 {
+  text-align: center;
+  line-height: 1;
+}
+.comp-text-cont1 h1 {
+  font-size: 3rem;
+  height: 30px;
+}
+.comp-text-cont1 p {
+  font-size: 1.3rem;
+}
+
+.comp-reviews-cont {
+  /* background-color: red; */
+  /* height: 100%; */
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.each-reviews {
+  background-color: #ffff;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  gap: 10px;
+  border: 2px solid rgb(198, 196, 196);
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.cust-img232 {
+  width: 100px;
+  height: 80px;
+}
+
+.cust-img232 img {
+  width: 100px;
+  height: 76px;
+}
+
+.cust-reviews232 {
+  width: 88%;
+  height: 80px;
+}
+
+.cust-rev-reviews549 {
+  display: flex;
+  gap: 1rem;
+}
+
+.cust-reviews232 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+  gap: 0.5rem;
+}
+
+.cust-rev-course {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.comparion-list-btn12 {
+  height: 2.5rem;
+}
+
+.list-itm-g56 {
+  height: 41px;
+}
+
+.rev-content1 p{
+  inline-size: 270px;
+  overflow-wrap: break-word;
+}

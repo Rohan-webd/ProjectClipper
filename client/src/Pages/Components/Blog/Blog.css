@@ -1,0 +1,19 @@
+.blog-main {
+    width: 90%;
+    margin: auto;
+}
+
+.blog-img  img{
+    width: 75rem;
+    height: 13rem;
+}
+
+.blog-content {
+    padding: 30px;
+    text-align: start;
+    width: 88%;
+    margin: auto;
+}
+.blog-content p {
+    font-size: 1.4rem;
+}

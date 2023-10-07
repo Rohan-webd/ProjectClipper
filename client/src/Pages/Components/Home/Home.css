@@ -1,0 +1,213 @@
+body {
+  background-color: #f5f7fe;
+}
+
+.dialog-box {
+  width: 400px;
+  height: 700px;
+  padding: 0px 35px 35px 35px;
+}
+
+.dialog-sub-box textarea {
+  width: 325px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.home-top-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #f5f7fe;
+  padding: 0rem 1rem 0rem 5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.logo-section {
+  font-size: 2.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.home-top-bar-section.button-section > #navbar-rev {
+  width: 105px;
+  border: 3px solid gray;
+  color: gray;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* #0BB980 */
+
+.home-main-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid yellow; */
+  gap: 2rem;
+  margin: 5rem 2rem 5rem 10rem;
+  padding: 30px;
+}
+
+.inreview {
+  /* border: 2px solid green; */
+}
+
+.all-reviews {
+  /* border: 2px solid red; */
+  display: flex;
+  gap: 10px;
+}
+
+.single-reviews {
+  /* border: 2px solid pink;
+  border: 2px solid pink; */
+  padding: 10px;
+  background-color: #ffff;
+}
+
+#tex-font-31 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+#tex-font-32 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #0bb980;
+}
+
+#tex-font-33 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.para-text {
+  width: 25rem;
+  font-size: 1.3em;
+}
+
+.reviews-stats {
+  display: flex;
+  gap: 5px;
+}
+
+.reviews-admin {
+  display: flex;
+  margin: 12px 0px 12px 0px;
+  gap: 5px;
+}
+
+.small-reviews {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.reviews-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.review-text1 {
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.blur-div {
+  filter: blur(3px);
+}
+
+#navbar-search-box {
+  width: 25rem;
+  margin-right: 14px;
+  height: 2.7em;
+  border-radius: 24px;
+  border: 1px solid gray;
+}
+#navbar-search-box:focus {
+  border-color: gray;
+}
+
+.login-dialog {
+}
+
+.main-lgn {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-items: center;
+}
+.login-text {
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+  height: 30px;
+  height: 60px;
+}
+
+.input-1-box {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0px 8px 0px;
+}
+.input-1-box input {
+  height: 35px;
+  width: 270px;
+  border: 1px solid rgb(178, 176, 176);
+  border-radius: 5px;
+  padding-left: 10px;
+  outline: none;
+  transition: 0.5s;
+
+}
+
+.input-2-box input {
+  height: 35px;
+  width: 270px;
+  border: 1px solid rgb(178, 176, 176);
+  border-radius: 5px;
+  padding-left: 10px;
+  outline: none;
+  transition: 0.5s;
+}
+input:focus {
+  border: 2px solid  #0bb980;;
+}
+.input-2-box label {
+  color: rgb(178, 176, 176);
+}
+.input-1-box label {
+  color: rgb(178, 176, 176);
+}
+
+.input-2-box {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0px 8px 0px;
+}
+
+.lgn-btn {
+  width: 200px;
+  background: rgb(32, 55, 226);
+  background: linear-gradient(
+    344deg,
+    rgba(32, 55, 226, 1) 0%,
+    rgba(11, 185, 128, 1) 72%
+  );
+  border-radius: 5px;
+  height: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.lgn-btn Button {
+  color: white;
+  width: 200px;
+}

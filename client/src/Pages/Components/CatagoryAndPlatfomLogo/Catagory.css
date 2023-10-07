@@ -1,0 +1,82 @@
+
+.cata-logo {
+    margin: auto;
+    width: 30%;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.logo-logo {
+    margin: auto;
+    width: 60%;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.catagory {
+    border: 1px solid rgb(184, 180, 180);
+    min-height: 575px;
+}
+.logo{
+    border: 1px solid rgb(184, 180, 180);
+    min-height: 575px;
+}
+.cata-btn {
+    width: 90%;
+    /* border: 1px solid red; */
+    text-align: start;
+    margin: auto;
+    text-transform: capitalize;
+    padding-top: 5px;
+}
+.cata-btn Button{
+    font-size: 0.8rem;
+    /* border: 1px solid green; */
+    border-radius: 5px;
+    background-color: #0bb980;
+    text-transform: capitalize;
+    /* color:  black; */
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: -19px;
+    margin-right: 15px;
+}
+ul li {
+    margin-right: 15px;
+}
+
+.del-cata:hover{
+    cursor: pointer;
+    border: 1px solid red;
+}
+.main-div-dialog-ad {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-catag {
+    display: flex;
+}
+
+.log-div {
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid rgb(230, 227, 227);
+}
+.log-div img {
+    width: 100%;
+
+}
+
+.cata-list {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}

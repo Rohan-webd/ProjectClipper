@@ -1,0 +1,94 @@
+.admin-main-div {
+    margin: auto;
+    width: 100%;
+    /* background-color: cyan; */
+}
+
+.panel-div {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.rev-admin-div {
+    margin: auto;
+    width: 70%;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 500px;
+
+}
+
+.rev-content-ad {
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+    width: 20rem;
+    padding: 10px;
+    border: 1px solid rgb(202, 199, 199);
+    max-height: 185px;
+
+}
+
+#del-btn {
+    /* background-color: red; */
+    color: red;
+    width: 15px;
+    border-color: rgb(195, 186, 186);
+
+}
+
+#add-btn {
+    /* background-color: #0bb980; */
+    color: #0bb980;
+    margin-right: 10px;
+    width: 15px;
+    border-color: rgb(195, 186, 186);
+
+}
+
+.log-btn-dv {
+    background-color: red;
+    width: 70px;
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.log-btn-dv Button {
+    font-size: 10px;
+    text-align: center;
+    color: white;
+}
+
+.adm-text-div {
+    background-color: #0bb980;
+}
+
+.adm-date-div {
+    /* background-color: yellow; */
+}
+
+input[type=date] {
+    width: 250px;
+    height: 30px;
+    border: 1px solid gainsboro;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.panel-div:first-child {
+    align-self: flex-end;
+}
