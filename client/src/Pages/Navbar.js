@@ -33,6 +33,8 @@ function Navbar() {
   const [authenticated , setisAuthenticated] = useState(false);
   const [GoogleAuth , setGoogleAuth] = useState(false);
   const [GoogleId , setGoogleId] = useState('');
+
+  const [Reviews , setReviews] = useState([]);
   const handleOpen = () => setDialogOpen(true);
   const handleClose = () => setDialogOpen(false);
   const handleOpenLogin = () => setLoginOpen(true);
@@ -208,6 +210,8 @@ function Navbar() {
     console.log(finalData);
     Axios.post("http://localhost:3001/reviews", finalData)
       .then((response) => {
+        setReviews((prev) => [finalData , ...prev]);
+        window.location.reload(false);
         console.log(response);
       })
       .catch((error) => {

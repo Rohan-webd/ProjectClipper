@@ -1,22 +1,32 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import {Alert} from '@mui/material';
 
-
-function CategoryAdminAuth({components , isAdmin}) {
+function CategoryAdminAuth({components , isadmin}) {
 const navigate = useNavigate();
-//   useEffect(()=>{
-//   if(!isAdmin){
-//   navigate("/signin");
-//   }
-//   } , []);
+  // useEffect(()=>{
+  // if(!isAdmin){
+  // navigate("/signin");
+  // }
+  // } , []);
 const BackHandler = (e) =>{
     e.preventDefault();
     navigate("/");
 }
+
+const [Admin , setisAdmin] = useState(false);
+useEffect(() => {
+const adminCond = JSON.parse(localStorage.getItem("AdminCondition"));
+setisAdmin(adminCond);
+}, [])
+
+
   return (
     <>
-    <div>{isAdmin ? components : "PLEASE ADMIN LOGIN FIRST"}</div>
-    {isAdmin && <button onClick={(e)=> BackHandler(e)}>GO BACK</button>}
+    
+    <div>{Admin && components}</div>
+    {!Admin && <button onClick={(e)=> BackHandler(e)}>GO BACK</button>}
+    {!Admin && <Alert severity="error">PLEASE ADMIN LOGIN</Alert>};
     </>
     
   )

@@ -16,6 +16,7 @@ import SingUp from "./Pages/SignUp";
 import SignIn from "./Pages/SignIn";
 import AuthLayout from "./Pages/Components/AuthLayout/AuthLayout";
 import AuthLayout2 from "./Pages/Components/AuthLayout/AuthLayout_2";
+import ComparisonLayout from "./Pages/Components/AuthLayout/ComparisonLayout";
 import Catagory from "./Pages/Components/CatagoryAndPlatfomLogo/Catagory";
 import Protected from "./Pages/Components/AuthLayout/AuthLayout";
 import { useState , useEffect } from "react";
@@ -90,7 +91,7 @@ function App() {
     },
     {
       path: "/comparison",
-      element: <AuthLayout><Comparison /></AuthLayout>
+      element: <ComparisonLayout><Comparison /></ComparisonLayout>
     },
     {
       path: "/privacy",

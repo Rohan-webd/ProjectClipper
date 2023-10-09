@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState , useCallback } from "react";
 import "../Reviews/Reviews.css";
 import { useNavigate } from "react-router";
 
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+// import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import Rating from "@mui/material/Rating";
 
 import Navbar from "../../Navbar";
@@ -12,17 +12,22 @@ import Axios from 'axios';
 const Reviews = () => {
     const navigate = useNavigate();
     const [review, setReview] = useState([]);
+    const fetchReviews = useCallback( async() =>{
+        try{
+        const response = await Axios.get("http://localhost:3001/reviews");
+        setReview(response.data);
+        }
+        catch(err){
+            console.log(err);
+        }
+    }, []);
     useEffect(() => {
-        Axios.get("http://localhost:3001/reviews").then((response) => {
-            setReview(response.data);
-        });
+    fetchReviews();
     },[]);
-    
     const calculateTimeDifference = (timestamp) => {
         const currentTime = new Date();
         const uploadTime = new Date(timestamp);
         const timeDifference = currentTime - uploadTime;
-
         const minutesAgo = Math.floor(timeDifference / (1000 * 60));
         if (minutesAgo < 1) {
             return "Just now";

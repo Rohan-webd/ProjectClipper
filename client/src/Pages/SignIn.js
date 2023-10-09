@@ -1,5 +1,5 @@
 import React , {useContext, useState,useEffect} from "react";
-
+import axios from "axios";
 import {useNavigate} from "react-router-dom";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
@@ -75,8 +75,11 @@ export default function SignIn() {
         navigate("/review");
       }
       else{
+        alert("PLEASE PROVIDE CORRECT CREDENTIALS");
         setisLoading(true);
         setisError(true);
+        setEmail('');
+        setPassword('');
         console.log("NOT AUTHENTICATED");
       }
 
@@ -90,7 +93,6 @@ export default function SignIn() {
   return (
     <>
       <Navbar />
-      {Error && <div >"ERROR IN LOGIN"</div>}
       <ThemeProvider theme={defaultTheme}>
         <Container component="main" maxWidth="xs">
           <CssBaseline />
